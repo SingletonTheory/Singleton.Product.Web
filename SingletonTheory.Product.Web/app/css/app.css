@@ -28,3 +28,18 @@
   content: "";
   padding: 0;
 }
+
+.widget {
+    border-radius: 15px;
+    background-color: #D3D3D3 !important;
+    margin: 3px;
+}
+
+.widgetbody {
+    text-align: center;
+}
+
+.dashboard {
+    align-content: center;
+}
+
