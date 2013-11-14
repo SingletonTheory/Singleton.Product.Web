@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('singletonProduct', [
+var singletonProduct = angular.module('singletonProduct', [
   'ngRoute',
   'singletonProduct.filters',
   'singletonProduct.services',

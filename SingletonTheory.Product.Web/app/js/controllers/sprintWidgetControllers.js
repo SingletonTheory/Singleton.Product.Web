@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-myApp.controller('StoryController',
+singletonProduct.controller('StoryController',
     function StoryController($scope, storyData) {
         $scope.event = storyData.event;
     }

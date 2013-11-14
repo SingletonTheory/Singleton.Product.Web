@@ -1,4 +1,4 @@
-﻿myApp.factory('storyData', function () {
+﻿singletonProduct.factory('storyData', function () {
     return {
         event: {
             storyName: 'dummy story',
