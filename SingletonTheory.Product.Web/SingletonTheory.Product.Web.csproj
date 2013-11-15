@@ -60,7 +60,7 @@
     <Content Include="app\directiveViewer.html" />
     <Content Include="app\css\app.css" />
     <Content Include="app\index.html" />
-    <Content Include="app\js\app.js" />
+    <Content Include="app\app.js" />
     <Content Include="app\js\controllers\controllers.js" />
     <Content Include="app\js\controllers\ctrlDashboard.js" />
     <Content Include="app\js\controllers\sprintWidgetControllers.js" />
@@ -470,8 +470,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\controls\datetime\" />
+    <Folder Include="app\controls\textbox\" />
+    <Folder Include="app\functionareas\agile\" />
+    <Folder Include="app\functionareas\dashboard\" />
+    <Folder Include="app\functionareas\projects\" />
     <Folder Include="app\img\" />
     <Folder Include="app\js\modules\" />
+    <Folder Include="app\widgets\agile\" />
+    <Folder Include="app\widgets\dashboard\" />
+    <Folder Include="app\widgets\projects\" />
     <Folder Include="logs\" />
   </ItemGroup>
   <PropertyGroup>
