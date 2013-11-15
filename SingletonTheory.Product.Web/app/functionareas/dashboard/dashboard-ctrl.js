@@ -3,7 +3,7 @@
 /* Controllers */
 
 angular.module('singletonProduct.controllers', []).
-    controller('ctrlDashboard', function ($scope) {
+    controller('dashboardCtrl', function ($scope) {
 
         var itemsPerRow = 3;
 
@@ -12,32 +12,38 @@ angular.module('singletonProduct.controllers', []).
             {
                 name: "Widget1",
                 url: "",
-                title: " Title1"
+                title: " Title1",
+                type: "span"
             },
             {
                 name: "Widget2",
                 url: "",
-                title: " Title2"
+                title: " Title2",
+                type: "storyWidget"
             },
             {
                 name: "Widget3",
                 url: "",
-                title: " Title3"
+                title: " Title3",
+                type: "storyWidget"
             },
             {
                 name: "Widget4",
                 url: "",
-                title: " Title4"
+                title: " Title4",
+                type: "storyWidget"
             },
             {
                 name: "Widget5",
                 url: "",
-                title: "Title5"
+                title: "Title5",
+                type: "storyWidget"
             },
             {
                 name: "Widget6",
                 url: "",
-                title: "Title6"
+                title: "Title6",
+                type: "storyWidget"
             }
         ];
 
