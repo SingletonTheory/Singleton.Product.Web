@@ -7,54 +7,56 @@ angular.module('singletonProduct.controllers', []).
 
         var itemsPerRow = 3;
 
-        // Temp dummy widget data
+        // Temp dummy widget data - will retrieve the widget data via the authservice injected into the controller at a later stage.
         $scope.widgets = [
             {
                 name: "Widget1",
                 url: "",
-                title: " Title1",
-                type: "span"
+                title: "Title1",
+                type: "story-widget"
             },
             {
                 name: "Widget2",
                 url: "",
-                title: " Title2",
-                type: "storyWidget"
+                title: "Title2",
+                type: "story-widget"
             },
             {
                 name: "Widget3",
                 url: "",
-                title: " Title3",
-                type: "storyWidget"
+                title: "Title3",
+                type: "story-widget"
             },
             {
                 name: "Widget4",
                 url: "",
-                title: " Title4",
-                type: "storyWidget"
+                title: "Title4",
+                type: "story-widget"
             },
             {
                 name: "Widget5",
                 url: "",
                 title: "Title5",
-                type: "storyWidget"
+                type: "story-widget"
             },
             {
                 name: "Widget6",
                 url: "",
                 title: "Title6",
-                type: "storyWidget"
+                type: "story-widget"
             }
         ];
 
+        //determine how many rows of widgets there should be.
         $scope.rowcount = Math.ceil($scope.widgets.length / itemsPerRow);
 
         $scope.rows = new Array($scope.rowcount);
 
+        //create an array to iterate over with ng-repeat.
         for (var i = 0; i < $scope.rowcount; i++)
             $scope.rows[i] = i;
 
-        //retrieves specified rows widgets from widget collection.
+        //retrieves specified row widgets from widget collection.
         $scope.getNextWidgetRow = function (rownumber) {
 
             var rowWidgets = new Array();

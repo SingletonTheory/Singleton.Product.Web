@@ -1,9 +1,7 @@
-﻿<div class="container dashboard">
+﻿<div class="container dashboard" ng-controller="dashboardCtrl">
     <div class="row-fluid" ng-repeat="row in rows" >
         <div class="span3 widget" ng-repeat="widget in getNextWidgetRow(row)">
-            <h4 class="modal-header">{{widget.title}}</h4>
-            <span class="widgetbody">{{widget.name}}</span>
-            <st-dashboardwidget />
+            <st-dashboardwidget type={{widget.type}} title={{widget.title}}/>
         </div>
     </div>
 </div>

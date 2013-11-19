@@ -2,8 +2,14 @@
 'use strict';
 singletonProduct.directive('storyWidget', function ($compile) {
     return {
+        link: function (scope, element, attrs) {
+            scope.$watch('widget', function(widget) {
+                if (widget) {
+                    scope.widget = widget;
+                }
+            });
+        },
         restrict: 'E',
-        replace: true,
         templateUrl: 'partials/directives/storyWidget.html'
-    }
+    };
 });
